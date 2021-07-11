@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   annotations:
-    test.speedscale.com/scenarioid: ed6f22fe-9cdb-4e81-873e-6db3a9e63f6c
+    test.speedscale.com/scenarioid: a4493e02-b954-474b-aaf9-ff9bd1b04e79
     test.speedscale.com/testconfigid: standard
     test.speedscale.com/cleanup: "true"
     test.speedscale.com/tag: COMMIT_HASH
