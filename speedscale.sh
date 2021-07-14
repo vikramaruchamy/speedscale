@@ -6,9 +6,8 @@ echo "Waiting for scenario report to be available"
 
 for i in {1..20}; do
   echo "Checking for available report (attempt ${i})"
-  statusprint=`$(speedctl report get ${SCENARIO_TAG})`
   echo 'Speedscale Status'
-  echo statusprint
+  echo $(speedctl report get ${SCENARIO_TAG})
   status=`$(speedctl report get ${SCENARIO_TAG} | jq -rc '.status' | tr '[[:upper:]]' '[[:lower:]]' || true)`
 
   case ${status} in
